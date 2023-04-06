@@ -16,4 +16,4 @@ BMI        Category
 <18.5      Underweight 
 18.5–24.9  Normal weight 
 25–29.9    Overweight 
->=30       Obese 
+=>30       Obese 
