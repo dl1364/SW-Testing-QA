@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>BMI-Calculator</title>
+	</head>
+	<body>
+	 <form method="POST" action="/home">
+		<h1>BMI Calculator</h1>
+		<br>
+		Please input height in feet and inches:<br>
+		Feet: <input type="text" name="feet"><br>
+		Inches <input type="text" name="inches"><br>
+		<br>
+                Please input weight in lbs:<br>
+		Weight: <input type="text" name="weight"><br>
+		<button id="show" onclick="show()">Submit</button>
+		<br><br>
+	  {% if category %}
+		The BMI for a person who is {{feet}} ' {{inches}} and weighs {{weight}} lbs is {{bmi}} or pratically {{roundbmi}}
+		<br>
+	  Category: {{category}}   
+		{% endif %}
+	 </form>	
+	</body>
+<html>
