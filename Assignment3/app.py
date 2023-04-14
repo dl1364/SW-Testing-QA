@@ -36,7 +36,7 @@ def calculate_category(bmi):
         return "Overweight"
     elif bmi > 30 or bmi == 30:
         return "Obese"
-    else:
+    elif bmi == 0 or bmi < 0:
         return "Error"
 
 
