@@ -36,7 +36,10 @@ jobs:
           command: "pip list"
       - run:
           name: "Run Tests"
-          command: "coverage run -m pytest; coverage report"
+          command: |
+            flask run&
+            coverage run -m pytest
+            coverage report
       - coveralls/upload
 
 # Orchestrate jobs using workflows
