@@ -1,6 +1,6 @@
 import pytest
 import requests
-from app import calculate_bmi, calculate_category
+from Assignment3.app import calculate_bmi, calculate_category
 
 @pytest.mark.parametrize("feet, inches, weight, bmi", [(5, 11, 140, 20), (5, 11, 180, 25.7)])
 
